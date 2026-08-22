@@ -4,7 +4,7 @@ Data Science student at the University of Wisconsin–Madison.
 
 Research focus: **Reliable Scientific Machine Learning · Neural Operators · Numerical & Physical Fidelity · Uncertainty Quantification · Evidence-Grounded AI**
 
-[📄 Curriculum Vitae (PDF)](Chaewon_Yoon_CV.pdf) · [GitHub](https://github.com/chaewon-research) · [LinkedIn](https://linkedin.com/in/chaewon) · [Email](mailto:chaewon.yoon.ds@gmail.com)
+[📄 Curriculum Vitae (PDF)](Chaewon_Yoon_CV.pdf) · [GitHub](https://github.com/chaewon-research) · [LinkedIn](https://www.linkedin.com/in/chaewon-yoon-542a14328) · [Email](mailto:chaewon.yoon.ds@gmail.com)
 
 ---
 
@@ -48,8 +48,8 @@ AI-assisted accessibility mapping prototype for sidewalk quality control and ano
 
 ## Applied Systems & Engineering Prototypes
 
-- **[MagTrace-MX](https://github.com/chaewon-research/magtrace-mx):** TinyML multi-axis magnetic field tracking prototype and validation documentation.
-- **[DuctSense AFD](https://github.com/chaewon-research/ductsense-afd):** Acoustic fault detection system architecture and technical documentation.
+- **[MagTrace-MX](https://github.com/chaewon-research/magtrace-mx):** TinyML-enabled inductive-sensing quality fixture for component identity, placement, orientation, and workflow verification.
+- **[DuctSense AFD](https://github.com/chaewon-research/ductsense-afd):** Clamp-on structure-borne vibration system for non-invasive duct restriction diagnostics.
 - **[Assistive Hand-Gesture AI](https://github.com/chaewon-research/assistive-hand-gesture-ai):** Wearable gesture-recognition interface design and validation report.
 - **[SwallowSafe AI](https://github.com/chaewon-research/swallowsafe-ai):** Closed-loop assistive fluid pacing concept for dysphagia-risk workflows.
 
