@@ -10,6 +10,21 @@ I study **efficient and reliable machine learning**, especially what happens whe
 
 ---
 
+## Accepted Research Paper
+
+### WACV 2027: Operator-Conditioned Mixed Precision for Inverse Vision
+
+**The Measurement Operator Changes Which Bits Matter: Operator-Conditioned Mixed Precision for Inverse Vision**  
+**IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027), Algorithms Track. Accepted; proceedings forthcoming.**
+
+This paper studies how sensing geometry changes which stages of an inverse-vision model are sensitive to reduced precision. It introduces Operator-Susceptibility Matching (OSM), a method for selecting operator-conditioned mixed-precision schedules using calibrated stage-sensitivity estimates.
+
+**Topics:** Computational Imaging · Inverse Problems · Quantization · Mixed-Precision Inference
+
+[Research overview](https://github.com/chaewon-research/chaewon-research/tree/main/research/operator-conditioned-mixed-precision)
+
+---
+
 ## Current Research
 
 ### Quantized Defect Correction (QDC)
