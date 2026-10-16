@@ -4,6 +4,8 @@ Data Science · University of Wisconsin–Madison
 
 My research focuses on **efficient and reliable machine learning**, particularly the effects of reduced numerical precision and computational constraints on model behavior. I study how to identify the computations most sensitive to approximation and preserve them without sacrificing the efficiency gained elsewhere.
 
+I am also part of Professor Grigoris Chrysos's research group at UW–Madison, exploring diffusion-based reconstruction.
+
 **Research interests:** Efficient Machine Learning · Quantization · Model Compression · Adaptive Computation · Neural Operators · ML Systems
 
 [CV](https://github.com/chaewon-research/chaewon-research/blob/main/Chaewon_Yoon_CV.pdf) · [LinkedIn](https://www.linkedin.com/in/chaewon-yoon-542a14328) · [Email](mailto:chaewon.yoon.ds@gmail.com)
@@ -57,6 +59,24 @@ QDC investigates how quantization affects different components of neural operato
 The project studies weight and activation sensitivity, physics-based residual diagnostics, and selective precision correction. Its evaluations include fractional-PDE neural operators and GPU inference under low-precision arithmetic.
 
 [Repository](https://github.com/chaewon-research/qdc-fractional-neural-operators) · [Preprint](https://github.com/chaewon-research/qdc-fractional-neural-operators/blob/main/paper/QDC_Fractional_Neural_Operators_Preprint_2026.pdf) · [Software DOI](https://doi.org/10.5281/zenodo.21977847)
+
+### CausationEntropy
+
+Collaborative research on causal discovery and conditional mutual information estimation, with emphasis on statistical validity and computational efficiency.
+
+[Research Repository](https://github.com/Center-For-Complex-Systems-Science/causationentropy)
+
+---
+
+## Selected Open-Source Contributions
+
+**Station House** — Developed an OLMo 3 identity-spoofing research pilot, reproducible LLM evaluation tooling, and contributed to benchmark review.
+
+[Research Contribution](https://github.com/Station-House/LLMConsciousnessSelfAttributionRepo/pull/7) · [Hugging Face](https://huggingface.co/spaces/Station-house/ConspiracyBench)
+
+**AladdinAI** — Contributed upstream improvements to native C/Python infrastructure, including robust DOCX parsing and session-isolated dataset splitting for AI evaluation.
+
+[DOCX Parsing](https://github.com/aliyevaladddin/AladdinAI/pull/972) · [Dataset Splitting](https://github.com/aliyevaladddin/AladdinAI/pull/929)
 
 ---
 
