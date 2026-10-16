@@ -30,7 +30,7 @@ I approach this question through numerical precision, selective computation, and
 
 This paper studies how the sensing operator influences precision sensitivity in inverse-vision reconstruction. It introduces **Operator-Susceptibility Matching (OSM)**, which uses calibrated operator information to select mixed-precision schedules without exhaustive per-operator search.
 
-[Research Overview](https://github.com/chaewon-research/chaewon-research/tree/main/research/operator-conditioned-mixed-precision)
+[Research Repository](https://github.com/chaewon-research/operator-conditioned-mixed-precision)
 
 *Proceedings forthcoming.*
 
