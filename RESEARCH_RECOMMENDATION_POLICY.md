@@ -1,71 +1,76 @@
-# Research Recommendation Policy — Mandatory Hard Gate
+# Research Recommendation Policy
 
-**Status:** Binding research-idea recommendation criteria for this repository.
+**Source of authority:** the user's hard rule is to recommend ideas only when they *directly align with their big research theme, explicitly stated in GitHub*. The theme is copied verbatim below. All other procedures in this file are proposed **operational checks**, not additional user-stated rules.
 
-## 1. Canonical research theme (quote exactly)
+## The one hard rule
 
 > How far can we reduce the computational cost of machine-learning systems without losing the internal computations or representations that are important for their capabilities?
 
-Source of truth: the **Research Direction** section of [README.md](README.md). This overarching question—not an existing method, repository, collaborator, model family, or submission deadline—determines which ideas are eligible for recommendation.
+**The rule decides candidate eligibility BEFORE convenience, familiarity, CVPR deadlines, or rankings.** Alignment must be the *scientific question*, not a post-hoc paragraph about related topics.
 
-## 2. Non-negotiable eligibility gate
+## Mandatory theme-alignment decision
 
-Evaluate the actual **proposed scientific question and experiment**, not a broad subject-label or a plausible-sounding title. All four conditions must be explicitly present:
+For **each** candidate, complete the following four-part causal sentence:
 
-1. **Reduce cost (C).** Name a concrete cost to reduce: measured inference latency, energy, memory, bandwidth, number of model evaluations, or another clearly defined computational resource. FLOPs or proxy counts alone cannot substantiate a claimed real-world speedup.
-2. **Identify critical internals (I).** Name the *internal computations or representations* hypothesized to be indispensable (e.g., particular layers, features, tokens, frequency components, arithmetic operations, or update steps). Specify why approximation/removal might damage the capability. Simply preserving the final output or measuring generic image quality is not sufficient.
-3. **Preserve a capability (P).** Name a capability-level outcome and the acceptable degradation under reduced cost. Show why it captures what the model can *do*, not merely an appealing example or visual similarity score.
-4. **Test the connection (T).** Specify a causal or counterfactual test: intervene on/approximate the proposed internal computation; measure capability changes; compare against a cost-matched, nonselective or existing selective policy; report actual cost and quality together. Controls must be reproducible.
+> We will reduce **[specific computational resource]** by approximating/removing **[named internal computation or representation]**, while preserving **[specific capability]**; **[intervention/controlled test]** will distinguish critical from expendable computation at matched cost.
 
-**PASS (conceptual eligibility)** only if **C + I + P + T** are all clear and falsifiable. **FAIL** if any part is absent, vague, or bolted on after the topic was selected. Mark unperformed or inconclusive experiments **UNVALIDATED**; never treat conceptual eligibility as empirical confirmation.
+Evaluate these as diagnostic questions derived from the user's theme:
 
-### Examples of immediate rejection
+| Diagnostic | What must be explicit | Reject when |
+| --- | --- | --- |
+| **C: Cost reduced** | Where computation is removed; which resource and measurement (latency/energy/memory/bandwidth/model calls) | Merely improves image quality or task score with no computational reduction |
+| **I: Internal mechanism** | Which model computation/representation is potentially capability-critical; what perturbation targets it | Only calls something "important" without identifying what is preserved |
+| **P: Preserved capability** | Capability-level performance to preserve and relevant degradation measure | Only generic visual appeal or irrelevant proxy scores |
+| **T: Test** | Proposed intervention/ablation and cost-matched comparator to examine whether I causes P's deterioration under C | Unfalsifiable claim or no means of separating mechanism from generic compute reduction |
 
-- "Make diffusion faster" without specifying and testing indispensable internal computations.
-- "Get better geometric solutions" without explicit computational reduction and internal preservation.
-- "Prune important visual tokens" without a concrete capability-critical mechanism, counterfactual evidence, or a defensible distinction from prior pruning work.
-- "Extend the accepted WACV paper" merely because the model or sensing task is familiar.
-- "The method is novel/competitive because it satisfies the theme"; theme alignment alone does not establish either claim.
+**Conceptual PASS:** all four are specifically and falsifiably proposed, even if experiments have not yet been run. Label these ideas **THEME-ALIGNED / UNVALIDATED** until tested.  
+**FAIL:** any of C/I/P/T is absent or vague, or the actual scientific question is not about the cost–critical-internals–capability relationship. Do not recommend it; explain the gap.  
+**INDETERMINATE:** current candidate description or evidence is insufficient; refine and rerun the gate before recommending.
 
-## 3. Selection process (never reverse the order)
+The actual user rule is the quoted research question; C/I/P/T are the assistant's *transparent test for it*. Do **not** assert that the user independently demanded a certain method or a specific experimental protocol.
 
-1. **Quote the exact theme** from the README and state the C/I/P/T conditions.
-2. **Generate candidates across the full eligible research space** (e.g., compression, neural architectures, efficient perception and reasoning, selective execution, numerical precision, representation preservation). Do not start by assuming that inverse problems, quantization, diffusion, or any particular prior repository is best.
-3. **Apply C/I/P/T to each candidate before ranking.** Reject failures transparently. An idea cannot win based on venue popularity, convenience, or existing code if it fails the gate.
-4. **Audit novelty against the closest prior work.** Identify at least the most relevant competing methods and explain which scientific claim remains different. Do not assert novelty is established from a superficial search; distinguish known precedents from a tentative open question. Prefer primary papers and official venue sources when checking current research.
-5. **Verify available evidence.** Read current GitHub README/experiment logs, including negative results and baseline limitations; do not turn preliminary or failed experiments into a claim of feasibility. Explicitly separate proposed hypotheses, documented findings, and verified independently published work.
-6. **Rank only eligible ideas** by scientific distinctness, measurable capability preservation, reproducible controls, real compute savings, strong baselines, venue fit, and time/compute feasibility. Call out overlap with existing/accepted publications, including WACV work.
-7. **Recommend conditionally**, with one decisive low-cost falsification experiment, quantitative go/no-go criteria, and a backup path if it fails. Do not promise acceptance or claim a result before measuring it.
+## Selection and ranking workflow
 
-A tight deadline changes *feasibility*, not *eligibility*. It never licenses relaxing the hard gate or defaulting to the easiest familiar project.
+1. **Read fresh sources:** [README.md](README.md), this policy, [AGENTS.md](AGENTS.md), current relevant experiment logs/READMEs, and [retrospective audit](RECOMMENDATION_AUDIT.md) before a new recommendation.
+2. **Generate varied candidates before choosing a favorite.** Search across precision/compression, adaptive execution, visual perception/reasoning, representation preservation, systems, and architectures where appropriate. No mandatory preference for diffusion, inverse vision, geometric solvers, or extensions of accepted papers.
+3. **Gate every candidate independently:** write the actual C/I/P/T answers; discard FAIL and INDETERMINATE from rankings. Do not choose a topic first then append an "alignment" rationale.
+4. **Only for passes, evaluate separate dimensions:** (a) closest prior art and credible scientific novelty; (b) state of evidence and negative results; (c) cost-measurement validity and feasibility; (d) conference scope and timing; (e) differentiation from accepted work.
+5. **Document evidence rather than invent it:** distinguish *hypothesis*, *documented pilot*, and *reproduced experiment*; identify unmatched protocols, missing data, and adverse results.
+6. **Recommend only from eligible, evidence-supported candidates**, with a comparison against alternatives and one falsification experiment. If all eligible ideas have prohibitive novelty/evidence/feasibility problems, state **NO CURRENT VIABLE RECOMMENDATION**. A deadline never overrides the theme rule.
 
-## 4. Mandatory evaluation card for every recommended idea
+## Required decision record for a proposed recommendation
 
-Complete **every** field. If any of the first four cannot be answered concretely, **do not recommend the idea**.
+```markdown
+### Candidate: [actual scientific idea; not just a fashionable topic]
+Theme statement (one causal sentence): Reduce [C] by altering [I] while protecting [P], tested through [T].
+Cost reduced (C): [resource, intervention, and proposed metric]
+Internal computation/representation (I): [specific mechanism + perturbation]
+Capability preserved (P): [named capability, measurement + loss tolerance]
+Counterfactual verification (T): [controlled comparison, matched budget + actual runtime]
+Theme verdict: PASS / FAIL / INDETERMINATE
+Evidence: HYPOTHESIS / PILOT / REPRODUCED (with links; include negative results)
+Closest prior art and novelty gap: [named references with dates and honest unknowns]
+Relation to existing accepted work: [what is actually new vs WACV or other paper]
+Feasibility: [model, data, compute, timeline, blockers]
+Conference readiness: NOT READY / PROMISING / SUBMISSION-SUPPORTED
+Go/no-go test: [specific result that changes the decision]
+Final action: RECOMMEND / REVISE / REJECT / DEFER, with reason
+```
 
-| Required field | What must be stated |
-| --- | --- |
-| Cost to remove (C) | Exact resource and the proposed intervention/approximation |
-| Critical computation/representation (I) | Internal mechanism being tested and why it might matter |
-| Capability to retain (P) | Specific capability, metric, and acceptable degradation |
-| Falsification test (T) | Intervention, controls, fixed-cost baselines, and measurable outcomes |
-| Relationship to the theme | One direct causal sentence; not "it uses diffusion/vision/ML" |
-| Closest prior work | Named papers, overlapping claims, and credible novelty gap |
-| Evidence level | Hypothesis / validated pilot / independently reproduced / mature |
-| Existing project evidence | Relevant code and results **including failures**, with links |
-| Feasibility and risk | Data, model, GPU needs, schedule, blockers, confounds |
-| Go/no-go | Exact experiment and reason to abandon, revise, or continue |
+A **PASS** does not imply novelty, publishability, real runtime improvement, or CVPR acceptance. Only label **RECOMMEND** when those separate constraints have been assessed sufficiently to support the user's actual request.
 
-## 5. Response and honesty rules
+## Evidence hygiene
 
-- State **"fails the hard rule"** when C/I/P/T is missing. No post-hoc thematic rationalization.
-- Distinguish **theme fit**, **novelty**, **experimental feasibility**, and **conference readiness** as separate judgments.
-- Never infer that preserving task success proves the preservation of a particular internal representation. Require mechanism-specific ablations or interventions.
-- Never infer practical efficiency solely from model evaluations, FLOPs, or parameter counts when deployment latency/energy/memory is the claim.
-- Never hide negative GitHub results or replace them with earlier more favorable results.
-- Give the user the best evidence-supported recommendation, which can be **"none of the current candidates qualifies."**
-- If the user's request calls for fresh prior-art or deadline checking, verify current sources. If verification is unavailable, state that clearly.
+- Measure real hardware runtime/energy if claiming practical acceleration; separate it from FLOPs, denoiser-step counts, and inference under different protocols.
+- Distinguish **capability preservation** from mere output similarity, and correlate internal interventions with the claimed capability.
+- Include the strongest relevant positive and negative experiments; don't suppress failures.
+- Recheck recent primary papers and official conference instructions when timing/novelty matters; explicitly state if not verified.
+- Report known overlapping methods; never claim global novelty from a brief search.
+- Never infer that an untested plan already preserves a representation or reduces cost.
+- If the assistant has not completed the decision record, it must not call that idea its "best recommendation."
 
-## 6. Enforcement scope
+## Scope and auditing
 
-This policy is a durable, repository-readable decision standard. It guides assistants and collaborators who **read the repository instructions**; the presence of these files cannot guarantee that every external AI assistant or future chat will load and obey them. For a new assistant session, explicitly provide this policy or request that it read the repository instructions before brainstorming.
+[RECOMMENDATION_AUDIT.md](RECOMMENDATION_AUDIT.md) explicitly applies the rule to previous suggestions and records **no currently cleared best CVPR proposal**. Future recommendations should append a dated decision record before calling a candidate "recommended." Evidence changes should update the record rather than silently replacing negative results.
+
+This file is a repository-readable standard for agents and humans who encounter it. GitHub text cannot technically force an unrelated chat or external agent to obey it; a new agent must read the guidance. The file is not a substitute for substantive scientific evaluation.
