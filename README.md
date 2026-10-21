@@ -22,12 +22,13 @@ I approach this question through numerical precision, selective computation, and
 
 ### Hard Rule for Research Idea Recommendations
 
-A recommended research idea **must directly investigate reducing the computational cost of an ML system while identifying and preserving specific internal computations or representations that are important to a defined capability**. The idea must say **what computation will be reduced, what critical internal mechanism may be lost, which capability must survive, and how both the cost savings and preservation claim will be tested**. Otherwise, **reject it**—even if the topic is fashionable, feasible, vision-related, or similar to past projects.
+**Only recommend an idea when its scientific question directly addresses the theme quoted above.** It must investigate *how a specified computational cost can be reduced while preserving identifiable internal computations or representations that matter to a defined model capability*. Merely using efficient ML, computer vision, diffusion, or an existing project is **not** sufficient.
 
-This rule is **architecture- and application-agnostic**: do not default to inverse vision, diffusion, quantization, geometric solvers, or extensions of existing papers merely because they are familiar. Matching the theme is a necessary gate, **not** proof of novelty, soundness, conference fit, or readiness.
+For every idea, say **(C)** what computation is removed, **(I)** what internal mechanism is worth protecting, **(P)** what capability must survive, and **(T)** what test could falsify the proposed relationship. These four checks are **our operational interpretation of the theme**, not additional requirements claimed to come from the user. A fully specified experiment can be *conceptually aligned* before it has results; that must be labeled **unvalidated**, never sold as a demonstrated or CVPR-ready finding.
 
-See the [Research Recommendation Policy](RESEARCH_RECOMMENDATION_POLICY.md) for the mandatory eligibility test, evidence requirements, and evaluation template. Assistants should also follow [AGENTS.md](AGENTS.md).
+**First gate on direct theme alignment; only then rank eligible ideas** by genuine novelty, published prior art, up-to-date positive *and negative* repository findings, empirical evidence, feasibility, and conference suitability. Don't automatically recommend extensions of WACV, inverse vision, diffusion, quantization, or geometric solvers. If no candidate clears all separate checks, state that no viable recommendation has been established.
 
+Read the complete [Research Recommendation Policy](RESEARCH_RECOMMENDATION_POLICY.md), the [audited verdicts on previous suggestions](RECOMMENDATION_AUDIT.md), and [assistant instructions](AGENTS.md).
 ---
 
 ## Publications and Accepted Papers
