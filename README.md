@@ -74,9 +74,10 @@ Collaborative research on causal discovery and conditional mutual information es
 
 [Research Contribution](https://github.com/Station-House/LLMConsciousnessSelfAttributionRepo/pull/7) · [Hugging Face](https://huggingface.co/spaces/Station-house/ConspiracyBench)
 
-**AladdinAI** — Contributed upstream improvements to native C/Python infrastructure, including robust DOCX parsing and session-isolated dataset splitting for AI evaluation.
+**AladdinAI** — Contributed merged C/Python fixes for DOCX table parsing and inline image ordering, alongside session-isolated, versioned dataset splitting for AI evaluation. The inline-image fix was selected for the [XERJ Corpus Hub](https://hub.xerj.org/contributors/chaewon-research) as a reference implementation for AI coding agents.
 
-[DOCX Parsing](https://github.com/aliyevaladddin/AladdinAI/pull/972) · [Dataset Splitting](https://github.com/aliyevaladddin/AladdinAI/pull/929)
+[DOCX Table Parsing](https://github.com/aliyevaladddin/AladdinAI/pull/972) · [Inline Image Ordering](https://github.com/aliyevaladddin/AladdinAI/pull/974) · [Dataset Splitting](https://github.com/aliyevaladddin/AladdinAI/pull/929)  
+[![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/chaewon-research/badge.svg)](https://hub.xerj.org/contributors/chaewon-research)
 
 ---
 
