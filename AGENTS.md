@@ -2,6 +2,10 @@
 
 **Before proposing or ranking any research idea based on this repository**, read the canonical **Research Direction** in [README.md](README.md) and the full [Research Recommendation Policy](RESEARCH_RECOMMENDATION_POLICY.md).
 
+Canonical research theme (exact wording):
+
+> How far can we reduce the computational cost of machine-learning systems without losing the internal computations or representations that are important for their capabilities?
+
 The user's hard rule is not merely "related to efficient ML." A proposed idea qualifies only if it explicitly:
 1. Reduces a concrete computational cost.
 2. Identifies internal computations **or** representations that might be indispensable.
