@@ -20,15 +20,6 @@ My research is guided by a central question:
 
 I approach this question through numerical precision, selective computation, and the structure of approximation errors. My current research examines these problems in neural operators and inverse-vision models, with broader interests in efficient inference, representation compression, and larger neural architectures.
 
-### Hard Rule for Research Idea Recommendations
-
-**Only recommend an idea when its scientific question directly addresses the theme quoted above.** It must investigate *how a specified computational cost can be reduced while preserving identifiable internal computations or representations that matter to a defined model capability*. Merely using efficient ML, computer vision, diffusion, or an existing project is **not** sufficient.
-
-For every idea, say **(C)** what computation is removed, **(I)** what internal mechanism is worth protecting, **(P)** what capability must survive, and **(T)** what test could falsify the proposed relationship. These four checks are **our operational interpretation of the theme**, not additional requirements claimed to come from the user. A fully specified experiment can be *conceptually aligned* before it has results; that must be labeled **unvalidated**, never sold as a demonstrated or CVPR-ready finding.
-
-**First gate on direct theme alignment; only then rank eligible ideas** by genuine novelty, published prior art, up-to-date positive *and negative* repository findings, empirical evidence, feasibility, and conference suitability. Don't automatically recommend extensions of WACV, inverse vision, diffusion, quantization, or geometric solvers. If no candidate clears all separate checks, state that no viable recommendation has been established.
-
-Read the complete [Research Recommendation Policy](RESEARCH_RECOMMENDATION_POLICY.md), the [audited verdicts on previous suggestions](RECOMMENDATION_AUDIT.md), and [assistant instructions](AGENTS.md).
 ---
 
 ## Publications and Accepted Papers
