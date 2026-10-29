@@ -49,6 +49,7 @@ Contributed to Qwen and Llama circuit-discovery studies using exact activation p
 
 ## Selected Presentations
 
+- **UW–Madison Sustainability Symposium 2026:** *When Does Better AI Actually Save More Energy? Decision-Aware Adaptive Fidelity for Building Control.* [Poster](https://github.com/chaewon-research/research-posters/blob/main/Yoon_2026_UW_Madison_Sustainability_Symposium_Poster.pdf) · [DOI](https://doi.org/10.5281/zenodo.23750255)
 - **WiSys SPARK Symposium 2026:** *Placement-Aware Quantization for Fractional-PDE Neural Surrogates.* [DOI](https://doi.org/10.5281/zenodo.22044287)
 - **Pi Mu Epsilon Regional Undergraduate Mathematics Conference 2025:** *Numerical Stability and Convergence of Physics-Constrained Neural Networks in Vibration Modeling.* [DOI](https://doi.org/10.5281/zenodo.22044564)
 
