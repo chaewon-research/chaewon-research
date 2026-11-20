@@ -57,4 +57,10 @@ Contributed to Qwen and Llama circuit-discovery studies using exact activation p
 - **WiSys SPARK Symposium 2026:** *Placement-Aware Quantization for Fractional-PDE Neural Surrogates.* [DOI](https://doi.org/10.5281/zenodo.22044287)
 - **Pi Mu Epsilon Regional Undergraduate Mathematics Conference 2025:** *Numerical Stability and Convergence of Physics-Constrained Neural Networks in Vibration Modeling.* [DOI](https://doi.org/10.5281/zenodo.22044564)
 
+## Selected Honors & Awards
+
+- **Judge's Choice Award, Most Innovative Track (2026):** UW-Madison Tech Exploration Lab Demo Night, [PawSight](https://github.com/chaewon-research/PawSight).
+- **1st Place, Culver's Business Model Competition (2025):** UW Oshkosh, [CurbMap 360](https://github.com/chaewon-research/curbmap-360). [University feature](https://www.uwosh.edu/today/126855/uwo-student-entrepreneurs-ai-powered-map-for-people-with-mobility-challenges-tops-culver-pitch-contest/).
+- **Calculus Prize Exam Winner (2025):** $1,000 mathematics scholarship.
+
 Additional manuscripts, experimental artifacts, and software are available in my [research repositories](https://github.com/chaewon-research?tab=repositories).
