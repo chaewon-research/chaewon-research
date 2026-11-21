@@ -64,14 +64,14 @@ Contributed to Qwen and Llama circuit-discovery studies using activation patchin
 
 ## Selected Presentations
 
-- **16th Annual Plant Sciences Symposium, UW–Madison (2026):** *When Should AI Think More or Measure More?* [Poster](https://github.com/chaewon-research/research-posters/blob/main/Yoon_2026_UW_Madison_Plant_Sciences_Symposium_Poster.pdf)
+- **16th Annual Plant Sciences Symposium, UW-Madison (2026):** *When Should AI Think More or Measure More?* [Poster](https://github.com/chaewon-research/research-posters/blob/main/Yoon_2026_UW_Madison_Plant_Sciences_Symposium_Poster.pdf)
 - **UW-Madison Sustainability Symposium 2026:** *When Does Better AI Actually Save More Energy? Decision-Aware Adaptive Fidelity for Building Control.* [Poster](https://github.com/chaewon-research/research-posters/blob/main/Yoon_2026_UW_Madison_Sustainability_Symposium_Poster.pdf) · [DOI](https://doi.org/10.5281/zenodo.23750255)
 - **WiSys SPARK Symposium 2026:** *Placement-Aware Quantization for Fractional-PDE Neural Surrogates.* [DOI](https://doi.org/10.5281/zenodo.22044287)
 - **Pi Mu Epsilon Regional Undergraduate Mathematics Conference 2025:** *Numerical Stability and Convergence of Physics-Constrained Neural Networks in Vibration Modeling.* [DOI](https://doi.org/10.5281/zenodo.22044564)
 
 ## Selected Honors & Awards
 
-- **Judge's Choice Award, Most Innovative Track (2026):** UW-Madison Tech Exploration Lab Demo Night, [PawSight](https://github.com/chaewon-research/PawSight).
+- **Judge's Choice Award, Most Innovative Track (2026):** $500 prize for [PawSight](https://github.com/chaewon-research/PawSight), UW-Madison Tech Exploration Lab Demo Night.
 - **1st Place, Culver's Business Model Competition (2025):** UW Oshkosh, [CurbMap 360](https://github.com/chaewon-research/curbmap-360). [University feature](https://www.uwosh.edu/today/126855/uwo-student-entrepreneurs-ai-powered-map-for-people-with-mobility-challenges-tops-culver-pitch-contest/).
 - **Calculus Prize Exam Winner (2025):** $1,000 mathematics scholarship.
 
